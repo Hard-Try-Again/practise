@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        body{
+            width: 1024px;
+            height: 1024px;
+            background-color: black;
+            position: relative;
+        }
+        .div{
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            background-image: url(../imgs/intro.png);
+            background-repeat: repeat;
+            animation: move 6s linear infinite;
+        }
+        .box{
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            background-image: url(../imgs/intro.png);
+            background-repeat: repeat;
+            animation: do 4s linear infinite;
+        }
+        @keyframes move {
+            0%{
+                top: 0px;
+            }
+            100%{
+                top: 1024px;
+            }
+        }
+        @keyframes do {
+            0%{
+                top: 0px;left: 80px;
+            }
+           
+            100%{
+                top: 1024px;left: 90px;
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="box">
+
+    </div>
+    <div class="div">
+
+    </div>
+</body>
+</html>
