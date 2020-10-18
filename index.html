@@ -5,19 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body{
+            display: flex;
+        }
         #box{
             width:50px;
             height: 87px;
-            margin: 100px auto; 
             position: relative;
             overflow: hidden;
+            border: 1px black solid;
         }
         #small{
                 width: 400px;
                 height: 87px;
                 position: absolute;
                 background: url(imgs/2.jpg) no-repeat;
-                animation: move 8s steps(8) infinite;
+                animation: move 6s steps(8) infinite ;
+                
         }
         @keyframes move{
             0%{
@@ -27,11 +31,67 @@
                 left: -400px;
             }
         }
+        #box1{
+            width:127px;
+            height: 220px;
+            margin-left: 10px;
+            position: relative;
+            overflow: hidden;
+            border: 1px black solid;
+        }
+        #big{
+                width: 510px;
+                height: 220px;
+                position: absolute;
+                background: url(imgs/1.jpg) no-repeat;
+                animation: good 5s steps(4) infinite ;
+        }
+        @keyframes good{
+            0%{
+                left: 0px;
+            }
+            100%{
+                left: -510px;
+            }
+        }
+        #box2{
+            width:48px;
+            height: 180px;
+            margin-left: 10px;
+            position: relative;
+            overflow: hidden;
+            border: 1px black solid;
+        }
+        #large{
+                width: 480px;
+                height: 180px;
+                position: absolute;
+                background: url(imgs/20.png) no-repeat;
+                animation: goods 6s steps(20) infinite ;
+        }
+        @keyframes goods{
+            0%{
+                left: 0px;
+            }
+            100%{
+                left: -480px;
+            }
+        }
     </style>
 </head>
 <body>
     <div id="box">
         <div id="small">
+
+        </div>
+    </div>
+    <div id="box1">
+        <div id="big">
+
+        </div>
+    </div>
+    <div id="box2">
+        <div id="large">
 
         </div>
     </div>
