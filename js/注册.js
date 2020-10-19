@@ -1,7 +1,7 @@
 window.onload=function(){
     var dod=document.getElementsByClassName("gouwuche")[0];
     dod.onclick=function(){
-        window.location.href="../期末作业/购物车.html";
+        window.location.href="购物车.html";
     }
     var xtxt=document.getElementById("txt");
     var xp=document.getElementById("pp");

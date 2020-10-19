@@ -126,7 +126,7 @@ window.onload=function(){
  }
  var spa=document.getElementsByTagName("span");
  spa[1].onclick=function(){
-    window.location.href="../期末作业/注册.html";
+    window.location.href="注册.html";
 }
 }      
 
