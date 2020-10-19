@@ -1,0 +1,515 @@
+body{
+    width: 1300px;
+    height: 3000px;
+    margin: 20px auto;
+}
+ul,ol{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+header .test span:nth-child(1) a{
+    color: red;
+}
+.gouwuche{
+    cursor: pointer; 
+}
+.gouwuche i{
+    font-size: 26px;
+}
+header #section img{
+    float: left;
+    margin-left: 160px;
+}
+header .test{
+    width: 1140px;
+    display: flex;
+    justify-content: flex-end;
+}
+header .test span{
+   margin: 20px 0px 20px 20px;
+}
+header #section .search{
+    width: 450px;height: 32px;
+    border-color: red;
+    padding: 0;margin: 0;
+    margin-top: 20px;
+    margin-left: -80px;
+}
+.sea a i{
+    font-size: 26px;
+    color: white;
+}
+header #section .sea{
+    display: inline-block;
+    width: 40px;height: 36px;
+    background-color: red;
+    line-height: 32px;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    margin-left: -140px;
+}
+header #section{
+    width: 1140px;
+}
+header #section .gouwuche{
+    display: inline-block;
+    width: 100px;height: 34px;
+    background-color: red;
+    line-height: 34px;
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+}
+header #section{
+    display: flex;
+    justify-content: space-between;
+}
+.head li{
+   float: left;  
+   margin-left: 40px;
+   text-align: center;
+   color: black;
+   height: 30px;
+   line-height: 30px;
+  
+}
+.head li:first-child{
+    margin-left: 120px;
+    width: 200px;
+    background-color: red;
+    border: 1px solid red;
+}
+
+.line{
+    clear: both;
+    width: 100%;
+    border: 2px solid red;
+}
+.head .white a{
+    color: white;
+}
+.large{
+    background-color: gainsboro;
+    width: 1300px;
+    height: 2300px;
+    
+}
+
+.large .left_goods{
+    width: 240px;
+    height: 450px;
+    background-color: white;
+}
+.large .left_goods .little_box ul li{
+        float: left;
+        margin-left:5px ;
+        margin-top: -5px;
+        padding-bottom: 20px;
+        font-size: 14px;
+}
+.large .left_goods .little_box ul li a{
+    color: gray;
+}
+.large .left_goods .little_box ul li a:hover{
+    color: black;
+    text-decoration: underline;
+}
+.large .left_goods ul p{
+    margin-left: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: -8px;
+}
+.large .left_goods .little_box{
+    height: 62px;
+    border-bottom: 1px dashed gainsboro;
+}
+.large .left_goods .little_boxs ul li{
+    float: left;
+    margin-left:5px ;
+    margin-top: -5px;
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+.large .left_goods .little_boxs ul li a{
+    color: gray;
+}
+.large .left_goods .little_boxs ul li a:hover{
+    color: black;
+    text-decoration: underline;
+}
+.large .left_goods .little_boxs{
+    height: 80px;
+    border-bottom: 1px dashed gainsboro;
+}
+.large .left_goods .little_box:last-child{
+    border-style: none;
+}
+
+.large .box1 .center_showgoods,.left_goods,.right_enter{
+    float: left;
+}
+.large .right_enter .right_enter_person{
+    height: 200px;
+    width: 250px;
+    margin-top: 22px;
+    line-height: 20px;
+    text-align: center;   
+    border-bottom: 1px dashed gainsboro; 
+}
+.button button:first-child{
+    background-color: red;
+    width: 70px;
+    height: 30px;
+    border: none;
+    color: white;
+    font-size: 16px;
+}
+.button{
+    display: flex;
+    justify-content: space-around;
+}
+.button button:last-child{
+    background-color: rgb(29, 201, 72);
+    width: 70px;
+    height: 30px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    margin-left: 16px;
+}
+.right_enter{
+    background-color: white;
+}
+.right_enter .end ul li{
+    list-style-type: disc;
+    color: red;
+    padding: 2px;
+}
+.end{
+    width: 258px;
+}
+.right_enter .end ul li span{
+    color: black;
+}
+.right_enter .end ul li span:hover{
+    color: red;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.right_enter .end ul li span:nth-child(2){
+        margin-left: 20px;
+} 
+.large .clear{
+    clear: both;
+}
+.large .good{
+    width: 1100px;
+} 
+.large .good ul{
+    display: flex;  
+    justify-content: space-between;
+}
+.large .good ul .li{
+    width: 240px;
+    height: 274px;
+    text-align: center;
+    background-color: white;
+}
+.large .good ul .li:last-child{
+    margin-right: 36px;
+}
+.large .good ul .li img{
+    width: 175px;
+    height: 175px;
+    margin-left: 24px;
+    margin-top: 10px;
+}
+.large .good ul .li:hover{
+    position: relative;
+    margin-top: -2px;
+    box-shadow: 3px 10px 10px 3px gray;
+}
+
+.large .good ul .li p a:hover{
+    color: red;
+    text-decoration: underline;
+}
+.large .good ul li .price{
+    display: flex;
+    justify-content: flex-start;
+}
+.large .good ul li .price li:nth-child(1){
+        color: red;
+        font-size: 16px;
+        font-weight: bold;
+        margin-left: -24px;
+}
+.large .good ul li .price li:nth-child(2){
+    width: 40px;
+    height: 18px;
+    color: red;
+    line-height: 18px;
+    margin-right: 54px;
+    margin-left: 16px;
+    border: 1px dashed red;
+}
+.large .good ul li .price li:nth-child(3){
+    color: gray;
+    text-decoration: line-through;
+}
+.large{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.large .Product_play .title{
+    width: 1024px;
+    height: 60px;
+    margin-top: 30px;
+    margin-bottom: -20px;
+
+}
+.large .Product_play .title ul li a{
+    color: gray;
+    font-size: 18px;
+}
+.large .Product_play .title ul li a:hover{
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.large .Product_play h2{
+    display: inline;
+}
+.large .Product_play ul{
+    display: inline;
+}
+.large .Product_play ul li{
+    float: right;
+    font-size: 20px;
+    padding-left:16px ;
+}
+.large .Product_play .play::after{
+    content: "";display: block;clear: both;
+}
+.center_large .showplay,.activity,.hotgood{
+    float: left;
+}
+.center_large{
+    width: 1024px;
+    height: 490px;
+    display: flex;
+    margin-top: 4px;
+    justify-content: space-between;
+    background-color: white;
+
+}
+.center_large .activity{
+    width: 480px;
+    height: 490px;
+    margin-left: -10px;
+}
+.center_large .activity ul li{
+    width: 200px;
+    height: 238px;
+    margin-left: -10px;
+}
+.center_large .activity ul{
+    float: left;
+    margin-top: -3px;
+}
+.center_large .activity ul li img{
+   margin-left: 10px;
+}
+.center_large div ul li p:nth-child(1){
+    font-size: 24px;
+    text-align: center;
+}
+.center_large div ul li p:nth-child(2){
+    font-size: 16px;
+    text-align: center;
+}
+.center_large .hotgood{
+    width: 216px;
+    height: 490px;
+}
+.center_large .hotgood div{
+    float: left;
+    margin-top: 20px;
+}
+.center_large .hotgood .word{
+    width: 130px;
+    height: 80px;
+}
+.center_large .hotgood .image{
+    width: 80px;
+    height: 80px;
+}
+.center_large .hotgood ul li{
+    float: left;
+}
+.center_large .hotgood ul li:nth-child(1){
+   font-size: 10px;
+   margin-top: -20px;
+   margin-bottom: 10px;
+}
+.center_large .hotgood ul li:nth-child(1) a:hover{
+    color: red;
+    text-decoration: underline;
+}
+.center_large .hotgood ul li span:nth-child(1){
+    color: red;
+}
+.center_large .hotgood ul li span:nth-child(2){
+    text-decoration: line-through;
+    font-size: 14px;
+    margin-left: 20px;
+    color: gray;
+}
+.game .title{
+    margin-top: 30px;
+}
+.game .title ul li{
+    float: right;
+}
+.game .title ul{
+    display: inline;
+}
+.game .title h2{
+    display: inline;
+}
+.game .lovegood{
+    width: 1024px;
+    height: 280px;
+    margin-top: 20px;
+    background-color: white;
+}
+.game .lovegood ul .li:first-child{
+    margin-left: -42px;
+}
+.game .lovegood ul .li img{
+    margin: auto;
+}
+.game .lovegood ul .li p{
+    font-size: 16px;
+}
+.game .lovegood ul .li{
+    float: left;
+    width: 240px;
+    margin-left:16px ;
+    text-align: center;
+}
+.large .lovegood ul li .price{
+    display: flex;
+    justify-content: flex-start;
+}
+.large .lovegood ul li .price li:nth-child(1){
+        color: red;
+        font-size: 16px;
+        font-weight: bold;
+        margin-left: -24px;
+}
+.large .lovegood ul li .price li:nth-child(2){
+    width: 40px;
+    height: 18px;
+    color: red;
+    line-height: 18px;
+    margin-right: 54px;
+    margin-left: 16px;
+    border: 1px dashed red;
+}
+.large .lovegood ul li .price li:nth-child(3){
+    color: gray;
+    text-decoration: line-through;
+}
+.large .lovegood ul .li p a:hover{
+    color: red;
+    text-decoration:underline;
+}
+.large .game .title ul li{
+    color: gray;
+    font-size: 18px;
+}
+.large .game .title ul li:hover{
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.ending{
+    width: 1024px;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 130px;
+    justify-content: space-evenly;
+}
+.ending .table div{
+    float: left;
+}
+.ending .table div:nth-child(2){
+    width: 160px;
+    height: 60px;
+}
+.ending .table div:nth-child(1){
+    width: 60px;
+    height: 60px;
+}
+.ending .table div ul li:nth-child(1) span{
+    font-weight: bolder;
+    font-size: 22px;  
+}
+.ending .table div ul li{
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+.ending .table div ul{
+   margin-left: -30px;
+}
+.finish{
+    width: 1024px;
+    margin-top:30px ;
+    display: flex;
+    margin-left: 130px;
+    justify-content: space-evenly;
+}
+.finish .small ul li{
+    margin-left: 6px;
+}
+.finish .small ul li a{
+    color: gray;
+}
+.finish .small ul li a:hover{
+    color: red;
+}
+.finish .small:nth-child(1){
+    margin-left: -60px;
+}
+.complete ul li{
+   float: left;
+   margin-left: 50px;
+}
+.complete{
+    width: 1024px;
+    display: flex;
+    line-height: 80px;
+    margin-left: 130px;
+    justify-content: center;
+}
+.complete div{
+    margin-left: -80px;
+    font-size: 14px;
+}
+.complete div ul li a{
+    color: gray;
+}
+.complete div ul li a:hover{
+    color: red;
+}
+#copy{
+    display: flex;
+    justify-content: center;
+}

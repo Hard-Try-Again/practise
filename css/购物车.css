@@ -1,0 +1,55 @@
+.large{
+    background-color: gainsboro;
+    width: 1300px;
+    height: 600px;
+    }
+    .box{
+    width: 15px;
+    height: 18px;
+    border: 1px black solid;
+    margin: 0px auto;
+}
+table{
+    width: 990px;
+    margin-top: 50px;
+}
+td{
+    width: 200px;
+}
+.td{
+   width: 400px;
+} 
+.b1,.b3{
+    background-color: none;
+    border:1px black solid ;
+}
+#div1 p{
+    margin-top: -10px;
+}
+.b2{
+    text-align: center;
+}
+
+.td img{
+    width: 120px;
+    height: 120px;
+    
+}
+#div img{
+    margin-top: 15px;
+    float: left;
+    margin-right: 30px;
+}
+#div1::after{
+    content: "";display: block;clear: both;
+}
+#div1 span{
+    display: block;
+ float: left;
+}
+#settle_accounts:hover{
+    position: relative;top: 1px;
+}
+#del{
+    cursor: default;
+}

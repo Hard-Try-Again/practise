@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIY</title>
+    <link rel="stylesheet" href="css/Shop.css">
+   <link rel="stylesheet" href="css/icon.css">
+    <link rel="shortcut icon" href="img/熊猫.ico" type="image/x-icon">
+    <script src="js/购物车.js"></script>
+    <link rel="stylesheet" href="css/购物车.css">
+    <link rel="stylesheet" href="js/购物车.js">
+</head>
+<body>
+    <header>
+        <section class="test">
+            <span><a href="#">登录</a></span>
+            <span><a href="#">免费注册</a></span>
+            <span><a href="#">我的订单</a></span>
+            <span><a href="#">收藏夹</a></span>
+            <span><a href="#">帮助中心</a></span>
+        </section>
+        <section id="section">
+               <img src="img/logo.png" alt="logo">
+               <input type="text" class="search">
+               <span class="sea">
+                <a href="https://www.baidu.com"> 
+                    <i class="iconfont iconsearch">
+                    </i>
+                </a>
+            </span>
+               <div class="gouwuche" style="height: 36px;line-height: 30px;">
+                    <i class="iconfont icongouwuche"></i>
+                    <span>购物车</span>
+                    <span>0</span>
+               </div>
+        </section>
+    </header>
+    <ul class="head">
+        <li class="white"><a href="#">全部商品分类</a></li>
+        <li><a href="#">促销</a></li>
+        <li><a href="#">秒杀</a></li>
+        <li><a href="#">优惠券</a></li>
+    </ul>
+    <div class="line"></div>
+    <div class="large">
+        <table cellspacing="0" border="1">
+            <tr>
+               <th>选择</th>
+               <th>商品</th>
+               <th>单价</th>
+               <th>数量</th>
+               <th>金额</th>
+            </tr>
+        <tbody id="body">
+            <tr>
+                <td style="text-align: center;">
+                   <input type="checkbox" name="check" id="check0"  style="width: 20px;height:20px;">
+                </td>
+                <td class="td">
+                    <div id="div">
+                        <img src="./img/1.jpg" alt="">
+                    </div>
+                    <div id="div1">
+                        <h4>Dior 迪奥 花漾甜心小姐 女士淡香水</h4>
+                        <p>50毫升</p>
+                        <p>不支持7天无理由退货</p>
+                    </div>
+                </td>
+                <td style="text-align: center;">
+                    <strong style="color: red;" name="price">￥<em> 498.00</em></strong>
+                </td>
+                <td style="text-align: center;">
+                    <input type="button" value="-" class="minus_sign">
+                    <input type="text" name="" id="" value="1" class="text_value" style="width: 30px;">
+                    <input type="button" value="+" class=" plus_sign">
+                </td>
+                <td style="text-align: center;">
+                  <strong name="amounts" style="color: red;">￥<em>498.00</em></strong> 
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">
+                    <input type="checkbox" name="check" id="check1"  style="width: 20px;height:20px;">
+                 </td>
+                 <td class="td">
+                    <div id="div">
+                        <img src="../prjdemo/img/04.jpg" alt="">
+                    </div>
+                    <div id="div1">
+                        <h4>LANCOME 兰蔻 嫩肌活肤精华肌底液</h4>
+                        <p>50毫升</p>
+                        <p>不支持7天无理由退货</p>
+                    </div>
+                </td>
+                <td style="text-align: center;">
+                    <strong style="color: red;" name="price">￥<em>598.00</em> </strong>
+                </td>
+                <td style="text-align: center;">
+                    <input type="button" value="-" class="minus_sign" id="minus_sign">
+                    <input type="text" name="" id="two" value="1" class="text_value" style="width: 30px;">
+                    <input type="button" value="+" class="plus_sign" id="plus_sign">
+                </td>
+                <td style="text-align: center;">
+                  <strong name="amounts" style="color: red;">￥<em>598.00</em></strong> 
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">
+                    <input type="checkbox" name="check" id="check1"  style="width: 20px;height:20px;">
+                </td>
+                <td class="td">
+                    <div id="div">
+                        <img src="./img/2.jpg" alt="">
+                    </div>
+                    <div id="div1">
+                        <h4>CD 口红</h4>
+                        <p>50毫升</p>
+                        <p>不支持7天无理由退货</p>
+                    </div>
+                </td>
+                <td style="text-align: center;">
+                    <strong style="color: red;" name="price">￥<em>118.00</em> </strong>
+                </td>
+                <td style="text-align: center;">
+                    <input type="button" value="-" class="minus_sign" id="minus_sign">
+                    <input type="text" name="" id="two" value="1" class="text_value" style="width: 30px;">
+                    <input type="button" value="+" class="plus_sign" id="plus_sign">
+                </td>
+                <td style="text-align: center;">
+                    <strong name="amounts" style="color: red;">￥<em>118.00</em></strong> 
+                </td>
+            </tr>
+        </tbody>
+                <tfoot>
+                    <td style="text-align: center;">
+                        <input type="checkbox" id="all"   style="width: 20px;height:20px;"><label for="all">全选</label>
+                        <span id="del">删除</span>
+                     </td>
+                    <td colspan="3" style="text-align: right;">
+                        <strong id="total_sum" style="color: red;">总额:￥<em>0.00</em></strong> 
+                    </td>
+                    <td>
+                       <strong style="display: block; width: 142px;height: 36px;background-color: red;text-align: center;line-height: 36px;margin: 0 auto;cursor: default;" id="settle_accounts">
+                            立即结算
+                       </strong>
+                    </td>
+                </tfoot>
+    </table>
+    
+    </div>
+    <div class="ending">
+        <div class="table">
+            <div>
+                <img src="img/11 .png" alt="">
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <span>100%正品</span> 
+                    </li>
+                    <li>
+                        <span>正品保障 假一赔十</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="table">
+            <div>
+                <img src="img/12.png" alt="">
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <span>无忧退货</span> 
+                    </li>
+                    <li>
+                        <span>国内退货 售后无忧</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="table">
+            <div>
+                <img src="img/13.png" alt="">
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <span>低价保障</span> 
+                    </li>
+                    <li>
+                        <span>缩减环节 确保低价</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="table">
+            <div>
+                <img src="img/14.png" alt="">
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <span>海外发货</span> 
+                    </li>
+                    <li>
+                        <span>海外直邮 闪电发货</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div> 
+    <div class="finish">
+        <div class="small">
+            <ul>
+                <h3>购物指南</h3>
+                <li><a href="#">购物流程</a></li>
+                <li><a href="#">发票制度</a></li>
+                <li><a href="#">账户管理</a></li>
+                <li><a href="#">会员优惠</a></li>
+            </ul>
+        </div>
+        <div class="small">
+            <ul>
+                <h3>支付方式</h3>
+                <li><a href="#">货到付款</a></li>
+                <li><a href="#">网上支付</a></li>
+                <li><a href="#">礼 品 卡</a></li>
+                <li><a href="#">银行转账</a></li>
+            </ul>
+        </div>
+        <div class="small">
+            <ul>
+                <h3>订单服务</h3>
+                <li><a href="#">配送查询</a></li>
+                <li><a href="#">状态说明</a></li>
+                <li><a href="#">取消订单</a></li>
+                <li><a href="#">修改订单</a></li>
+            </ul>
+        </div>
+        <div class="small">
+            <ul>
+                <h3>配送方式</h3>
+                <li><a href="#">配送范围</a></li>
+                <li><a href="#">免邮标准</a></li>
+                <li><a href="#">订单自提</a></li>
+                <li><a href="#">验货签收</a></li>
+            </ul>
+        </div>
+        <div class="small">
+            <ul>
+                <h3>售后服务</h3>
+                <li><a href="#">售后政策</a></li>
+                <li><a href="#">价格保护</a></li>
+                <li><a href="#">退款说明</a></li>
+                <li><a href="#">退 换 货</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="complete">
+        <div>
+            <ul>
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">服务条款</a></li>
+                <li><a href="#">隐私保护</a></li>
+                <li><a href="#">联系我们</a></li>
+                <li><a href="#">帮助中心</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="copy">
+            <span>&lt;&copy;Xiao Ming's creation&gt;</span>
+    </div>
+</body>
+</html>
