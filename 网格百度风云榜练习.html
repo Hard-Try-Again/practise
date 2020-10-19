@@ -64,7 +64,18 @@
         h4{
             margin: 2px;margin-left: 15px;
         }
+        #btn{
+            position: fixed;right: 0;bottom: 0;
+        }
     </style>
+     <script>
+        window.onload=function(){
+             var bt=document.getElementById("btn");
+             bt.onclick=function(){
+                 window.location.href="网格百度风云榜练习.html";
+             }
+        }
+    </script>
 </head>
 <body>
     <div id="parent">
@@ -99,6 +110,8 @@
                 <p>阿里第一颗芯</p>
             </div>
         </div>
+        <button id="btn">下一个网站</button>
     </div>
+
 </body>
 </html>
