@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>立体骰子</title>
+    <style>
+        ul{
+            list-style: none;
+        }
+       
+        .touzi{
+            width: 100px;height: 100px;
+            position: relative;
+            margin: 100px auto;
+            transform-style: preserve-3d;
+            animation: move 8s linear infinite;
+        }
+        @keyframes move {
+            0%{
+                transform: rotate3d(0,0,0,0deg);
+            }
+            100%{
+                transform: rotate3d(1,1,1,360deg);
+            }
+        }
+        .touzi li{
+            position: absolute;width: 100px;height: 100px; display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,1fr);
+            border: 1px black solid;
+            align-items:center ;
+            justify-items: center;
+            grid-template-areas: 
+            "a1 a2 a3"
+            "a4 a5 a6"
+            "a7 a8 a9"
+            ;
+        }
+        .touzi li:nth-child(1){
+            left: 0;top: 0;transform: translateZ(100px);
+        }
+        .touzi li:nth-child(2){
+            left: -100px;top: 0;
+            transform-origin:right;transform: rotateY(90deg);
+        }
+        .touzi li:nth-child(3){
+            left: 100px;top: 0;
+            transform-origin:left;transform: rotateY(-90deg);
+        }
+        .touzi li:nth-child(4){
+            left: 0px;top: 100px;
+            transform-origin:top;transform: rotateX(90deg);
+        }
+        .touzi li:nth-child(5){
+            left: 0px;top: -100px;
+            transform-origin:bottom;transform: rotateX(-90deg);
+        }
+        .touzi li:nth-child(6){
+            left: 0px;top: 0px;
+        }
+        .touzi .one div:nth-child(1){
+            width: 20px;height: 20px;
+            border-radius: 50%;
+            background-color: black;
+        }
+        .touzi .two div:nth-child(1){
+            width: 20px;height: 20px;
+            border-radius: 50%;
+            background-color: black;
+        }
+        .touzi .two div:nth-child(2){
+            width: 20px;height: 20px;
+            border-radius: 50%;
+            background-color: black;
+            grid-area: 3/3/4/4;
+        }
+        .touzi .three div:nth-child(1){
+            width: 20px;height: 20px;
+            border-radius: 50%;
+            background-color: black;
+        }
+        .touzi .three div:nth-child(2){
+            width: 20px;height: 20px;
+            border-radius: 50%;
+            background-color: black;
+            grid-area: a5;
+        }
+        .touzi .three div:nth-child(3){
+            width: 20px;height: 20px;
+            border-radius: 50%;
+            background-color: black;
+            grid-area: a9;
+        }
+        .touzi .four div:nth-child(1){
+            width: 20px;height: 20px;
+            border-radius: 50%;
+            background-color: black;
+        } 
+        .touzi .four div:nth-child(2){
+            width: 20px;height: 20px;
+            border-radius: 50%;
+            background-color: black;
+            grid-area: a3;
+        } 
+        .touzi .four div:nth-child(3){
+            width: 20px;height: 20px;
+            border-radius: 50%;
+            background-color: black;
+            grid-area: a7;
+        } 
+        .touzi .four div:nth-child(4){
+            width: 20px;height: 20px;
+            border-radius: 50%;
+            background-color: black;
+            grid-area: a9;
+        } 
+        
+        .touzi .five div:nth-child(1){
+            width: 20px;height: 20px;
+            border-radius: 50%;
+            background-color: black;
+            grid-area: a1;
+        } 
+        .touzi .five div:nth-child(2){
+            width: 20px;height: 20px;
+            border-radius: 50%;
+            background-color: black;
+            grid-area: a3;
+        } 
+        .touzi .five div:nth-child(3){
+            width: 20px;height: 20px;
+            border-radius: 50%;
+            background-color: black;
+            grid-area: a5;
+        } 
+        .touzi .five div:nth-child(4){
+            width: 20px;height: 20px;
+            border-radius: 50%;
+            background-color: black;
+            grid-area: a7;
+        } 
+        .touzi .five div:nth-child(5){
+            width: 20px;height: 20px;
+            border-radius: 50%;
+            background-color: black;
+            grid-area: a9;
+        } 
+        .touzi .six div:nth-child(1){
+            width: 20px;height: 20px;
+            border-radius: 50%;
+            background-color: black;
+            grid-area: a1;
+        } 
+        .touzi .six div:nth-child(2){
+            width: 20px;height: 20px;
+            border-radius: 50%;
+            background-color: black;
+            grid-area: a3;
+        } 
+        .touzi .six div:nth-child(3){
+            width: 20px;height: 20px;
+            border-radius: 50%;
+            background-color: black;
+            grid-area: a4;
+        } 
+        .touzi .six div:nth-child(4){
+            width: 20px;height: 20px;
+            border-radius: 50%;
+            background-color: black;
+            grid-area: a6;
+        } 
+        .touzi .six div:nth-child(5){
+            width: 20px;height: 20px;
+            border-radius: 50%;
+            background-color: black;
+            grid-area: a7;
+        } 
+        .touzi .six div:nth-child(6){
+            width: 20px;height: 20px;
+            border-radius: 50%;
+            background-color: black;
+            grid-area: a9;
+        } 
+        #btn{
+            position: fixed;right: 0;bottom: 0;
+        }
+    </style>
+    <script>
+        window.onload=function(){
+             var bt=document.getElementById("btn");
+             bt.onclick=function(){
+                 window.location.href="网格百度风云榜练习.html";
+             }
+        }
+    </script>
+</head>
+<body>
+    <div id="parent">
+        <ul class="touzi">
+            <li class="one">
+                    <div></div>
+            </li>
+            <li class="two">
+                    <div></div>
+                    <div></div>
+            </li>
+            <li class="three">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+            </li>
+            <li class="four">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+            </li>
+            <li class="five">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+            </li>
+            <li class="six">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+            </li>
+        </ul>
+       <button id="btn">下一个网页</button>
+    </div>
+</body>
+</html>

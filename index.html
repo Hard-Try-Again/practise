@@ -74,7 +74,18 @@
                 left: -480px;
             }
         }
+        #btn{
+            position: relative;right: 0;bottom: 0;
+        }
     </style>
+    <script>
+        window.onload=function(){
+             var bt=document.getElementById("btn");
+             bt.onclick=function(){
+                 window.location.href="网格百度风云榜练习.html";
+             }
+        }
+    </script>
 </head>
 <body>
     <div id="box">
@@ -82,7 +93,7 @@
 
         </div>
     </div>
-    <div id="box1">
+    <!-- <div id="box1">
         <div id="big">
 
         </div>
@@ -91,6 +102,7 @@
         <div id="large">
 
         </div>
-    </div>
+    </div> -->
+    <button id="btn">下一个页面</button>
 </body>
 </html>
